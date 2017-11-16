@@ -40,7 +40,6 @@
 </aside>
 @include('web.components.features')
 @include('web.components.projects')
-@include('web.components.projects')
 @include('web.components.clients_feedback')
 @include('web.components.recent_from_blog')
 @endsection
