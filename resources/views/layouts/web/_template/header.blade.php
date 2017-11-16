@@ -5,11 +5,11 @@
             <nav role="navigation">
                 <ul>
                     <li><a href="{{route('web.work')}}">Work</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li class="cta"><a href="#">Get started</a></li>
+                    <li><a href="{{route('web.services')}}">Services</a></li>
+                    <li><a href="{{route('web.pricing')}}">Pricing</a></li>
+                    <li><a href="{{route('web.about')}}">About</a></li>
+                    <li><a href="{{route('web.contact')}}">Contact</a></li>
+                    <li class="cta"><a href="{{route('web.index')}}">HOME</a></li>
                 </ul>
             </nav>
         </div>
