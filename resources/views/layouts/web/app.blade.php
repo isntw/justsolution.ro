@@ -31,7 +31,6 @@
         {!! Html::style('/resources/libs/vendors/vendors.min.css') !!}
         <!-- Modernizr JS -->
         {!! Html::script('js/modernizr-2.6.2.min.js') !!}
-        <script src="js/modernizr-2.6.2.min.js"></script>
         <!-- FOR IE9 below -->
         <!--[if lt IE 9]>
         <script src="js/respond.min.js"></script>
@@ -46,7 +45,10 @@
             @include('layouts.web._template.pircing')
             @include('layouts.web._template.footer')
         </div>
+
         {!! Html::script('/resources/libs/vendors/vendors.min.js') !!}
+        @stack('scripts')
+
     </body>
 </html>
 

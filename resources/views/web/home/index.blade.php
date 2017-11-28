@@ -43,3 +43,11 @@
 @include('web.home.components.clients_feedback')
 @include('web.home.components.recent_from_blog')
 @endsection
+
+@push('scripts')
+<script type="text/javascript">
+    alertify.defaults.glossary.title = 'أليرتفاي جي اس';
+    alertify.defaults.glossary.ok = 'موافق';
+    alertify.defaults.glossary.cancel = 'إلغاء';
+</script>
+@endpush
