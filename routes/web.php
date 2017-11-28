@@ -11,8 +11,8 @@
   |
  */
 Route::group(['namespace' => 'Web'], function () {
-    Route::get('/', 'WebController@index')->name('web.index');
-    Route::get('/work', 'WebController@work')->name('web.work');
+    Route::get('/', 'HomeController@index')->name('web.home.index');
+    Route::resource('projects', 'ProjectController', ["as" => "web"]);
     Route::get('/services', 'WebController@services')->name('web.services');
     Route::get('/pricing', 'WebController@pricing')->name('web.pricing');
     Route::get('/about', 'WebController@about')->name('web.about');

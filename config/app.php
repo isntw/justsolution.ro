@@ -144,7 +144,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        \App\Providers\Components\HtmlComponentsProvider::class,
         /*
          * Application Service Providers...
          */

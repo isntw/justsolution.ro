@@ -7,72 +7,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 animate-box">
-                <a href="#" class="item-grid text-center">
-                    <div class="image" style="background-image: url(images/image_1.jpg)"></div>
-                    <div class="v-align">
-                        <div class="v-align-middle">
-                            <h3 class="title">Geographical App</h3>
-                            <h5 class="category">Web Application</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 animate-box">
-                <a href="#" class="item-grid text-center">
-                    <div class="image" style="background-image: url(images/image_2.jpg)"></div>
-                    <div class="v-align">
-                        <div class="v-align-middle">
-                            <h3 class="title">Geographical App</h3>
-                            <h5 class="category">User Interface</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 animate-box">
-                <a href="#" class="item-grid text-center">
-                    <div class="image" style="background-image: url(images/image_3.jpg)"></div>
-                    <div class="v-align">
-                        <div class="v-align-middle">
-                            <h3 class="title">Geographical App</h3>
-                            <h5 class="category">Branded</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 animate-box">
-                <a href="#" class="item-grid text-center">
-                    <div class="image" style="background-image: url(images/image_4.jpg)"></div>
-                    <div class="v-align">
-                        <div class="v-align-middle">
-                            <h3 class="title">Geographical App</h3>
-                            <h5 class="category">Web</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 animate-box">
-                <a href="#" class="item-grid text-center">
-                    <div class="image" style="background-image: url(images/image_5.jpg)"></div>
-                    <div class="v-align">
-                        <div class="v-align-middle">
-                            <h3 class="title">Geographical App</h3>
-                            <h5 class="category">Illustration</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 animate-box">
-                <a href="#" class="item-grid text-center">
-                    <div class="image" style="background-image: url(images/image_6.jpg)"></div>
-                    <div class="v-align">
-                        <div class="v-align-middle">
-                            <h3 class="title">Geographical App</h3>
-                            <h5 class="category">Web Application</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
+            @foreach($projects as $project)
+            {!! Html::projectPanel($project->title, $project->link, $project->image, $project->category) !!}
+            @endforeach
+
             <div class="col-md-12 text-center animate-box">
                 <p><a href="#" class="btn btn-primary with-arrow">View More Projects <i class="icon-arrow-right"></i></a></p>
             </div>

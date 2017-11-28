@@ -38,8 +38,8 @@
         </ul>
     </div>
 </aside>
-@include('web.components.features')
-@include('web.components.projects')
-@include('web.components.clients_feedback')
-@include('web.components.recent_from_blog')
+@include('web.home.components.services')
+@include('web.home.components.projects')
+@include('web.home.components.clients_feedback')
+@include('web.home.components.recent_from_blog')
 @endsection
