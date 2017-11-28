@@ -44,6 +44,9 @@ class minifyAssets extends Command {
                 base_path('public/css/owl.carousel.min.css'),
                 base_path('public/css/owl.theme.default.min.css'),
                 base_path('public/css/style.css'),
+                base_path('bower_components/alertify.js/themes/alertify.bootstrap.css'),
+                base_path('bower_components/alertify.js/themes/alertify.core.css'),
+                base_path('bower_components/alertify.js/themes/alertify.default.css'),
             ], 'js' => [
                 base_path('public/js/jquery.min.js'),
                 base_path('public/js/jquery.easing.1.3.js'),
@@ -52,6 +55,7 @@ class minifyAssets extends Command {
                 base_path('public/js/owl.carousel.min.js'),
                 base_path('public/js/jquery.flexslider-min.js'),
                 base_path('public/js/main.js'),
+                base_path('bower_components/alertify.js/lib/alertify.min.js'),
         ]];
 
         $minifier = ['css' => new Minify\CSS(), 'js' => new Minify\JS()];
