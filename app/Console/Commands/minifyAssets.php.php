@@ -55,6 +55,7 @@ class minifyAssets extends Command {
                 base_path('public/js/owl.carousel.min.js'),
                 base_path('public/js/jquery.flexslider-min.js'),
                 base_path('public/js/main.js'),
+                base_path('public/js/modernizr-2.6.2.min.js'),
                 base_path('bower_components/alertify.js/lib/alertify.min.js'),
         ]];
 

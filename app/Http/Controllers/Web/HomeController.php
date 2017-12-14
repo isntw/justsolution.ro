@@ -9,7 +9,7 @@ use App\Project;
 class HomeController extends Controller {
 
     public function index() {
-        $projects = Project::all();
+        $projects = Project::orderBy('id', 'desc')->limit(HOME_PAGE_ENTRIES)->get();
         return view('web.home.index')->with('projects', $projects);
     }
 
