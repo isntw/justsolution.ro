@@ -1,7 +1,7 @@
 @extends('layouts.web.app')
 
 @section('content')
-{!! Html::headers([['title'=>'Duceti-va afacerea la nivelul urmator','description' => '','img' => 'images/slide_2.jpg']])!!}
+{!! Html::headers([['title'=>'Urmatorul nivel al afacerii dumneavoastra', 'description' => '','img' => 'images/slide_2.jpg']], 'Incepeti')!!}
 <!--
 <aside id="fh5co-hero" class="js-fullheight">
     <div class="flexslider js-fullheight">

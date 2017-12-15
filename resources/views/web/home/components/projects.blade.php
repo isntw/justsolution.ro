@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
                 <h2>Ultimele Proiecte</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                <p>Ultimele proiecte realizate de echipa JustSolution.</p>
             </div>
         </div>
         <div class="row">

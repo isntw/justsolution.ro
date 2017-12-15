@@ -1,24 +1,8 @@
 @extends('layouts.web.app')
 
 @section('content')
+{!! Html::headers([['title'=>'Serviciile noastre', 'description' => 'Servicii oferite de echipa JustSolution','img' => 'images/slide_2.jpg']])!!}
 
-<aside id="fh5co-hero" class="js-fullheight">
-    <div class="flexslider js-fullheight">
-        <ul class="slides">
-            <li style="background-image: url(images/slide_2.jpg);">
-                <div class="overlay-gradient"></div>
-                <div class="container">
-                    <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
-                        <div class="slider-text-inner">
-                            <h2>Our Expertise</h2>
-                            <p class="fh5co-lead">Designed with <i class="icon-heart"></i> by the fine folks at <a href="http://freehtml5.co" target="_blank">FreeHTML5.co</a></p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-</aside>
 
 <div id="fh5co-services-section">
     <div class="container">

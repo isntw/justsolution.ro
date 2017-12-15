@@ -38,21 +38,24 @@ class HtmlComponentsProvider extends ServiceProvider {
                     . "</div>"
                     . "</div>";
         });
-        \Html::macro('headers', function($headers = null) {
+        \Html::macro('headers', function($headers = null, $button = null) {
 
             $li = '';
+            $button = $button ? '<p><a href="#" class="btn btn-primary btn-lg">' . $button . ' </a></p>' : '';
+
             foreach ($headers as $header) {
-                $li .= '<li style="background-image: url(' . $header['img'] . ');">
-                <div class="overlay-gradient"></div>
-                <div class="container">
-                    <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
-                        <div class="slider-text-inner">
-                            <h2>' . $header['title'] . '</h2>
-                            <p><a href="#" class="btn btn-primary btn-lg">Incepeti</a></p>
-                        </div>
-                    </div>
-                </div>
-            </li>';
+                $li .= '<li style="background-image: url(' . $header['img'] . ');">'
+                        . '<div class="overlay-gradient"></div>'
+                        . '<div class="container">'
+                        . '<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">'
+                        . '<div class="slider-text-inner">'
+                        . '<h2>' . $header['title'] . '</h2>'
+                        . '<p class="fh5co-lead">' . $header['description'] . '</p>'
+                        . $button
+                        . '</div>'
+                        . '</div>'
+                        . '</div>'
+                        . '</li>';
             }
 
             return '<aside id="fh5co-hero" class="js-fullheight">'
