@@ -16,14 +16,14 @@ class ProjectsSeeder extends Seeder {
             'description' => '',
             'category' => 'Site de Prezentare',
             'link' => null,
-            'image' => 'public/resources/img/projects/project1.jpg',
+            'image' => 'resources/img/projects/project1.jpg',
         ]);
         Project::create([
             'title' => 'Gestiune-Transport',
             'description' => '',
             'category' => 'Platforma de Administrare',
             'link' => null,
-            'image' => 'public/resources/img/projects/project2.jpg',
+            'image' => 'resources/img/projects/project2.jpg',
         ]);
     }
 

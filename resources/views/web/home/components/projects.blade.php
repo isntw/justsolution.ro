@@ -12,7 +12,7 @@
             @endforeach
 
             <div class="col-md-12 text-center animate-box">
-                <p><a href="#" class="btn btn-primary with-arrow">Vedeti Toate Proiectele<i class="icon-arrow-right"></i></a></p>
+                <p><a href="{{route('web.projects.index')}}" class="btn btn-primary with-arrow">Vedeti Toate Proiectele<i class="icon-arrow-right"></i></a></p>
             </div>
         </div>
     </div>
